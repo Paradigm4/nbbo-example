@@ -3,10 +3,6 @@ nbbo-example
 
 Example custom aggregation function that computes national best bid and offer
 
-The nbbo aggregate expects as input a single internally delimited string with the following format:
-       'entry_type,ref_unique_id,price,size,symbol,ordertype|'
-This string is created in step (3) below.
-
 ### Compile & copy the custom aggregation operator
 
 The nbbo custom aggregate function is defined in nbbo/src/nbbo.cpp. You'll need to have installed
