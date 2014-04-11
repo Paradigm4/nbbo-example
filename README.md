@@ -28,6 +28,7 @@ make
 cp libnbbo.so /opt/scidb/14.3/lib/scidb/plugins
 ```
 Adjusting your target directory accordingly for your installed version of SciDB.
+Be sure to copy libnbbo.so to the plugin directory on all your SciDB cluster nodes.
 
 
 ## Synopsis
