@@ -49,7 +49,7 @@ where,
 The nbbo function expects the input attribute to have the following form:
 ```
 order_type, ref_id, price, size, symbol, ask_bid_type|
-``
+```
 (the string must have a trailing vertical bar.)
 
 
