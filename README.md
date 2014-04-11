@@ -82,8 +82,7 @@ the nbbo aggregate, described in step (1) above.
 This produces the NBBO, formatted as the following comma separated output: 
        {symbol, timestamp} 'bid price, bid volume, ask price, ask volume'
 
-For example, inserting 'MSFT' after symbol= in the first line of code in this file produces the NBBO for MSFT. The value 5148 is the integer index value associated with MSFT.
-```
-       {5148, 71345010} '28.600000,100,28.290000,1462'
-```
-Subsequent lines in the file produce the NBBO for all 8000+ exchange traded equities.
+For example, inserting 'MSFT' after symbol= in the first line of code in this
+file produces the NBBO for MSFT. The value 5148 is the integer index value
+associated with MSFT.  Subsequent lines in the file produce the NBBO for all
+8000+ exchange traded equities.
