@@ -1,0 +1,5 @@
+#!/bin/bash
+
+rm -rf plugins Makefile CMakeFiles CMakeCache
+cmake -DSCIDB_SOURCE_DIR=/home/scidb/blewis/trunk
+make

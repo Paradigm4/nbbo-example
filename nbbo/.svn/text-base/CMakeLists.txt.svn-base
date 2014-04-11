@@ -1,0 +1,31 @@
+########################################
+# BEGIN_COPYRIGHT
+#
+# PARADIGM4 INC.
+# This file is part of the Paradigm4 Enterprise SciDB distribution kit
+# and may only be used with a valid Paradigm4 contract and in accord
+# with the terms and conditions specified by that contract.
+#
+# Copyright © 2010 - 2013 Paradigm4 Inc.
+# All Rights Reserved.
+#
+# END_COPYRIGHT
+########################################
+
+cmake_minimum_required(VERSION 2.6)
+
+# shared library for user defined objects
+set (nbbo_src
+     nbbo.cpp
+)
+include_directories("${SCIDB_SOURCE_DIR}/include")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DPROJECT_ROOT=\\\"${CMAKE_SOURCE_DIR}/\\\"")
+if ("${GENERAL_OUTPUT_DIRECTORY}" STREQUAL "")
+    set(GENERAL_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
+endif ("${GENERAL_OUTPUT_DIRECTORY}" STREQUAL "")
+
+add_library(nbbo SHARED ${nbbo_src})
+set_target_properties(nbbo PROPERTIES LIBRARY_OUTPUT_DIRECTORY ${GENERAL_OUTPUT_DIRECTORY}/plugins)
+#target_link_libraries(nbbo acml_mp)
+#set_target_properties(nbbo PROPERTIES LINK_FLAGS "-lacml_mp -L.")
+#file(COPY *.so  DESTINATION ${GENERAL_OUTPUT_DIRECTORY}/plugins)

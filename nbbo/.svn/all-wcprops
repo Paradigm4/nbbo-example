@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/poc/!svn/ver/256/trunk/poc/Tibra/nbbo
+END
+clean
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/poc/!svn/ver/253/trunk/poc/Tibra/nbbo/clean
+END
+build_and_install
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/poc/!svn/ver/256/trunk/poc/Tibra/nbbo/build_and_install
+END
+CMakeLists.txt
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/poc/!svn/ver/250/trunk/poc/Tibra/nbbo/CMakeLists.txt
+END
+test
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/poc/!svn/ver/255/trunk/poc/Tibra/nbbo/test
+END
+nbbo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/poc/!svn/ver/259/trunk/poc/Tibra/nbbo/nbbo.cpp
+END
